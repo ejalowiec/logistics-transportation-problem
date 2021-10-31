@@ -4,6 +4,9 @@
 # User-specific stuff
 .idea/*
 
+# Module files
+*.iml
+
 # CMake
 cmake-build-*/
 
