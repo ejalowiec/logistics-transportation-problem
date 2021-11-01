@@ -35,15 +35,15 @@ import java.awt.event.ActionListener;
 //    }
 
 
-public class Simple extends JFrame {
+public class Simple {
 
     public Simple() {
-        super("Transportation problem");
-        setSize(1250, 1000);
-        setLayout(null);
-        setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
+        JFrame frame = new JFrame("Transportation problem");
+        frame.setSize(1250, 1000);
+        frame.setLayout(null);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
 
         // top panel
         JPanel topPanel = new JPanel();
@@ -67,7 +67,7 @@ public class Simple extends JFrame {
         JPanel footagePanel = new JPanel();
         footagePanel.setBounds(0, 900, 1250, 250);
         footagePanel.setBackground(Color.blue);
-//        footagePanel.setLayout(null);
+        footagePanel.setLayout(null);
 
         // labels in top panel
         // supply label
@@ -246,17 +246,16 @@ public class Simple extends JFrame {
         D2O3transportationCost.setBounds(860,225,150,30);
         bottomPanel.add(D2O3transportationCost);
 
-//         submit button
-//        JButton submitButton = new JButton("Done");
-//        submitButton.setBounds(565, 90, 80, 40);
-//        submitButton.setBackground(Color.green);
+        // submit button
+        JButton submitButton = new JButton("Done");
+        submitButton.setBounds(555, 0, 100, 40);
+        submitButton.setBackground(Color.green);
+        footagePanel.add(submitButton);
 
 
-//        footagePanel.add(submitButton);
-        add(topPanel);
-        add(centerPanel);
-        add(bottomPanel);
-        add(footagePanel);
-
+        frame.add(topPanel);
+        frame.add(centerPanel);
+        frame.add(bottomPanel);
+        frame.add(footagePanel);
     }
 }
