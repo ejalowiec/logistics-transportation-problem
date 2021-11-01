@@ -180,13 +180,18 @@ public class Simple extends JFrame {
 
 
         // labels in bottom panel
-        // receiver 1 label
+        JLabel transportationCosts = new JLabel( "Koszty transportu:");
+        transportationCosts.setBounds(520,30,260,30);
+        transportationCosts.setFont(new Font("Calibri", Font.BOLD, 27));
+        bottomPanel.add(transportationCosts);
+
+        // supplier 1 label
         JLabel supplier1transportationCost = new JLabel( "Dostawca 1:");
         supplier1transportationCost.setBounds(220,150,170,30);
         supplier1transportationCost.setFont(new Font("Calibri", Font.PLAIN, 22));
         bottomPanel.add(supplier1transportationCost);
 
-        // receiver 2 label
+        // supplier 2 label
         JLabel supplier2transportationCost = new JLabel( "Dostawca 2:");
         supplier2transportationCost.setBounds(220,230,170,30);
         supplier2transportationCost.setFont(new Font("Calibri", Font.PLAIN, 22));
