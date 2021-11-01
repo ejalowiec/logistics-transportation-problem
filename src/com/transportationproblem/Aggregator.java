@@ -1,16 +1,19 @@
 package com.transportationproblem;
 
 public class Aggregator {
+    // top section
     private int D1supply;
     private int D1buyingPrice;
     private int D2supply;
     private int D2buyingPrice;
+    // center section
     private int O1demand;
     private int O1sellingPrice;
     private int O2demand;
     private int O2sellingPrice;
     private int O3demand;
     private int O3sellingPrice;
+    // bottom section
     private int D1O1transportationCost;
     private int D1O2transportationCost;
     private int D1O3transportationCost;
@@ -19,6 +22,7 @@ public class Aggregator {
     private int D2O3transportationCost;
 
     public int getD1supply() {
+//        System.out.println(D1supply);
         return D1supply;
     }
 
