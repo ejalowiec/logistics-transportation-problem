@@ -9,6 +9,6 @@ import java.awt.event.ActionListener;
 
     public static void main(String[] args) {
         System.out.println("hello");
-        new Simple();
+        new EnterData();
     }
 }
