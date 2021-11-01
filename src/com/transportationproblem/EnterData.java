@@ -226,7 +226,7 @@ public class EnterData {
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // disable window with data
-//                frame.dispose();
+                frame.dispose();
 
                 // integrate frontend data with backend
                 Aggregator aggregator = new Aggregator();
@@ -274,7 +274,7 @@ public class EnterData {
 //                new TransportationProblemLogic()
 
                 // show result on the screen
-//                new DisplayResult();
+                new DisplayResult();
             }
         });
 
