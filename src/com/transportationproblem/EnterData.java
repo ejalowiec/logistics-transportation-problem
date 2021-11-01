@@ -226,7 +226,7 @@ public class EnterData {
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // disable window with data
-                frame.dispose();
+//                frame.dispose();
 
                 // integrate frontend data with backend
                 Aggregator aggregator = new Aggregator();
@@ -240,13 +240,36 @@ public class EnterData {
                 aggregator.setO1sellingPrice(Integer.parseInt(O1sellingPrice.getText()));
                 aggregator.setO2demand(Integer.parseInt(O2demand.getText()));
                 aggregator.setO2sellingPrice(Integer.parseInt(O2sellingPrice.getText()));
+                aggregator.setO3demand(Integer.parseInt(O3demand.getText()));
+                aggregator.setO3sellingPrice(Integer.parseInt(O3sellingPrice.getText()));
                 // bottom section
                 aggregator.setD1O1transportationCost(Integer.parseInt(D1O1transportationCost.getText()));
                 aggregator.setD1O2transportationCost(Integer.parseInt(D1O2transportationCost.getText()));
                 aggregator.setD1O3transportationCost(Integer.parseInt(D1O3transportationCost.getText()));
-                aggregator.setD1O1transportationCost(Integer.parseInt(D2O1transportationCost.getText()));
-                aggregator.setD1O2transportationCost(Integer.parseInt(D2O2transportationCost.getText()));
-                aggregator.setD1O3transportationCost(Integer.parseInt(D2O3transportationCost.getText()));
+                aggregator.setD2O1transportationCost(Integer.parseInt(D2O1transportationCost.getText()));
+                aggregator.setD2O2transportationCost(Integer.parseInt(D2O2transportationCost.getText()));
+                aggregator.setD2O3transportationCost(Integer.parseInt(D2O3transportationCost.getText()));
+
+                // test print
+                System.out.println(aggregator.getD1supply()); // prints 1
+                System.out.println(aggregator.getD1buyingPrice()); // prints 2
+                System.out.println(aggregator.getD2supply()); // prints 3
+                System.out.println(aggregator.getD2buyingPrice()); // prints 4
+
+                System.out.println(aggregator.getO1demand()); // prints 5
+                System.out.println(aggregator.getO1sellingPrice()); // prints 6
+                System.out.println(aggregator.getO2demand()); // prints 7
+                System.out.println(aggregator.getO2sellingPrice()); // prints 8
+                System.out.println(aggregator.getO3demand()); // prints 9
+                System.out.println(aggregator.getO3sellingPrice()); // prints 10
+
+                System.out.println(aggregator.getD1O1transportationCost()); // prints 11
+                System.out.println(aggregator.getD1O2transportationCost()); // prints 12
+                System.out.println(aggregator.getD1O3transportationCost()); // prints 13
+                System.out.println(aggregator.getD2O1transportationCost()); // prints 14
+                System.out.println(aggregator.getD2O2transportationCost()); // prints 15
+                System.out.println(aggregator.getD2O3transportationCost()); // prints 16
+
 
 //                new DisplayResult();
             }
