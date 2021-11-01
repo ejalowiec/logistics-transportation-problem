@@ -251,26 +251,29 @@ public class EnterData {
                 aggregator.setD2O3transportationCost(Integer.parseInt(D2O3transportationCost.getText()));
 
                 // test print
-                System.out.println(aggregator.getD1supply()); // prints 1
-                System.out.println(aggregator.getD1buyingPrice()); // prints 2
-                System.out.println(aggregator.getD2supply()); // prints 3
-                System.out.println(aggregator.getD2buyingPrice()); // prints 4
+//                System.out.println(aggregator.getD1supply()); // prints 1
+//                System.out.println(aggregator.getD1buyingPrice()); // prints 2
+//                System.out.println(aggregator.getD2supply()); // prints 3
+//                System.out.println(aggregator.getD2buyingPrice()); // prints 4
+//
+//                System.out.println(aggregator.getO1demand()); // prints 5
+//                System.out.println(aggregator.getO1sellingPrice()); // prints 6
+//                System.out.println(aggregator.getO2demand()); // prints 7
+//                System.out.println(aggregator.getO2sellingPrice()); // prints 8
+//                System.out.println(aggregator.getO3demand()); // prints 9
+//                System.out.println(aggregator.getO3sellingPrice()); // prints 10
+//
+//                System.out.println(aggregator.getD1O1transportationCost()); // prints 11
+//                System.out.println(aggregator.getD1O2transportationCost()); // prints 12
+//                System.out.println(aggregator.getD1O3transportationCost()); // prints 13
+//                System.out.println(aggregator.getD2O1transportationCost()); // prints 14
+//                System.out.println(aggregator.getD2O2transportationCost()); // prints 15
+//                System.out.println(aggregator.getD2O3transportationCost()); // prints 16
 
-                System.out.println(aggregator.getO1demand()); // prints 5
-                System.out.println(aggregator.getO1sellingPrice()); // prints 6
-                System.out.println(aggregator.getO2demand()); // prints 7
-                System.out.println(aggregator.getO2sellingPrice()); // prints 8
-                System.out.println(aggregator.getO3demand()); // prints 9
-                System.out.println(aggregator.getO3sellingPrice()); // prints 10
+                // start calculations
+//                new TransportationProblemLogic()
 
-                System.out.println(aggregator.getD1O1transportationCost()); // prints 11
-                System.out.println(aggregator.getD1O2transportationCost()); // prints 12
-                System.out.println(aggregator.getD1O3transportationCost()); // prints 13
-                System.out.println(aggregator.getD2O1transportationCost()); // prints 14
-                System.out.println(aggregator.getD2O2transportationCost()); // prints 15
-                System.out.println(aggregator.getD2O3transportationCost()); // prints 16
-
-
+                // show result on the screen
 //                new DisplayResult();
             }
         });
