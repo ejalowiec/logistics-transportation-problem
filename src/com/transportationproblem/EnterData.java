@@ -225,7 +225,29 @@ public class EnterData {
         // button listener
         submitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                // disable window with data
                 frame.dispose();
+
+                // integrate frontend data with backend
+                Aggregator aggregator = new Aggregator();
+                // top section
+                aggregator.setD1supply(Integer.parseInt(D1supply.getText()));
+                aggregator.setD1buyingPrice(Integer.parseInt(D1buyingPrice.getText()));
+                aggregator.setD2supply(Integer.parseInt(D2supply.getText()));
+                aggregator.setD2buyingPrice(Integer.parseInt(D2buyingPrice.getText()));
+                // center section
+                aggregator.setO1demand(Integer.parseInt(O1demand.getText()));
+                aggregator.setO1sellingPrice(Integer.parseInt(O1sellingPrice.getText()));
+                aggregator.setO2demand(Integer.parseInt(O2demand.getText()));
+                aggregator.setO2sellingPrice(Integer.parseInt(O2sellingPrice.getText()));
+                // bottom section
+                aggregator.setD1O1transportationCost(Integer.parseInt(D1O1transportationCost.getText()));
+                aggregator.setD1O2transportationCost(Integer.parseInt(D1O2transportationCost.getText()));
+                aggregator.setD1O3transportationCost(Integer.parseInt(D1O3transportationCost.getText()));
+                aggregator.setD1O1transportationCost(Integer.parseInt(D2O1transportationCost.getText()));
+                aggregator.setD1O2transportationCost(Integer.parseInt(D2O2transportationCost.getText()));
+                aggregator.setD1O3transportationCost(Integer.parseInt(D2O3transportationCost.getText()));
+
 //                new DisplayResult();
             }
         });
