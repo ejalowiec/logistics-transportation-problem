@@ -2,8 +2,37 @@ package com.transportationproblem;
 
 public class Logic {
 
+    private static double kosztCalk = 0;
+    private static double przychodCalk = 0;
+    private static double zyskPosr;
 
+    public static double getKosztCalk() {
+        return kosztCalk;
+    }
 
+    public static double getPrzychodCalk() {
+        return przychodCalk;
+    }
+
+    public static double getZyskPosr() {
+        return zyskPosr;
+    }
+
+    public static String getMacierzOptymalnychPrzewozow() {
+        return macierzOptymalnychPrzewozow;
+    }
+
+    private static String macierzZyskowJednostkowych = "";
+
+    public static String getMacierzZyskowJednostkowych() {
+        return macierzZyskowJednostkowych;
+    }
+
+    private static String macierzOptymalnychPrzewozow = "";
+
+    public static String getmacierzOptymalnychPrzewozow() {
+        return macierzOptymalnychPrzewozow;
+    }
 
     public Logic() {
 
@@ -65,12 +94,14 @@ public class Logic {
                 T[i][j].ilosc = 0;
             }
         }
-
+        System.out.println("Tabela zysków jednostkowych:");
         for (int i = 0; i < 2; ++i) {
             for (int j = 0; j < 3; ++j) {
                 System.out.print(T[i][j].zyskJednostkowy + " ");
+                this.macierzZyskowJednostkowych += T[i][j].zyskJednostkowy + " ";
             }
             System.out.println();
+            this.macierzZyskowJednostkowych += "\n";
         }
 
         System.out.println();
@@ -263,16 +294,15 @@ public class Logic {
             }
         }
 
+        System.out.println("Tabela optymalnych przewozów:");
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 4; ++j) {
                 System.out.print(T[i][j].zyskJednostkowy + "(" + T[i][j].ilosc + ") ");
+                macierzOptymalnychPrzewozow += (T[i][j].zyskJednostkowy + "(" + T[i][j].ilosc + ") ");
             }
             System.out.println();
+            macierzOptymalnychPrzewozow += "\n";
         }
-
-        double kosztCalk = 0;
-        double przychodCalk = 0;
-        double zyskPosr;
 
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 3; j++) {

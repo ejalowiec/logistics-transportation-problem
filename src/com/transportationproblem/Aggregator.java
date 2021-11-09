@@ -1,6 +1,7 @@
 package com.transportationproblem;
 
 public class Aggregator {
+    // properties
     // top section
     private static int D1supply;
     private static double D1buyingPrice;
@@ -21,6 +22,8 @@ public class Aggregator {
     private static double D2O2transportationCost;
     private static double D2O3transportationCost;
 
+
+    // methods
     public int getD1supply() {
 //        System.out.println(D1supply);
         return D1supply;
