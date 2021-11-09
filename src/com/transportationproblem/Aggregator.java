@@ -2,24 +2,24 @@ package com.transportationproblem;
 
 public class Aggregator {
     // top section
-    private int D1supply;
-    private int D1buyingPrice;
-    private int D2supply;
-    private int D2buyingPrice;
+    private static int D1supply;
+    private static double D1buyingPrice;
+    private static int D2supply;
+    private static double D2buyingPrice;
     // center section
-    private int O1demand;
-    private int O1sellingPrice;
-    private int O2demand;
-    private int O2sellingPrice;
-    private int O3demand;
-    private int O3sellingPrice;
+    private static int O1demand;
+    private static double O1sellingPrice;
+    private static int O2demand;
+    private static double O2sellingPrice;
+    private static int O3demand;
+    private static double O3sellingPrice;
     // bottom section
-    private int D1O1transportationCost;
-    private int D1O2transportationCost;
-    private int D1O3transportationCost;
-    private int D2O1transportationCost;
-    private int D2O2transportationCost;
-    private int D2O3transportationCost;
+    private static double D1O1transportationCost;
+    private static double D1O2transportationCost;
+    private static double D1O3transportationCost;
+    private static double D2O1transportationCost;
+    private static double D2O2transportationCost;
+    private static double D2O3transportationCost;
 
     public int getD1supply() {
 //        System.out.println(D1supply);
@@ -30,11 +30,11 @@ public class Aggregator {
         D1supply = d1supply;
     }
 
-    public int getD1buyingPrice() {
+    public double getD1buyingPrice() {
         return D1buyingPrice;
     }
 
-    public void setD1buyingPrice(int d1buyingPrice) {
+    public void setD1buyingPrice(double d1buyingPrice) {
         D1buyingPrice = d1buyingPrice;
     }
 
@@ -46,11 +46,11 @@ public class Aggregator {
         D2supply = d2supply;
     }
 
-    public int getD2buyingPrice() {
+    public double getD2buyingPrice() {
         return D2buyingPrice;
     }
 
-    public void setD2buyingPrice(int d2buyingPrice) {
+    public void setD2buyingPrice(double d2buyingPrice) {
         D2buyingPrice = d2buyingPrice;
     }
 
@@ -62,11 +62,11 @@ public class Aggregator {
         O1demand = o1demand;
     }
 
-    public int getO1sellingPrice() {
+    public double getO1sellingPrice() {
         return O1sellingPrice;
     }
 
-    public void setO1sellingPrice(int o1sellingPrice) {
+    public void setO1sellingPrice(double o1sellingPrice) {
         O1sellingPrice = o1sellingPrice;
     }
 
@@ -78,7 +78,7 @@ public class Aggregator {
         O2demand = o2demand;
     }
 
-    public int getO2sellingPrice() {
+    public double getO2sellingPrice() {
         return O2sellingPrice;
     }
 
@@ -94,7 +94,7 @@ public class Aggregator {
         O3demand = o3demand;
     }
 
-    public int getO3sellingPrice() {
+    public double getO3sellingPrice() {
         return O3sellingPrice;
     }
 
@@ -102,7 +102,7 @@ public class Aggregator {
         O3sellingPrice = o3sellingPrice;
     }
 
-    public int getD1O1transportationCost() {
+    public double getD1O1transportationCost() {
         return D1O1transportationCost;
     }
 
@@ -110,7 +110,7 @@ public class Aggregator {
         D1O1transportationCost = d1O1transportationCost;
     }
 
-    public int getD1O2transportationCost() {
+    public double getD1O2transportationCost() {
         return D1O2transportationCost;
     }
 
@@ -118,7 +118,7 @@ public class Aggregator {
         D1O2transportationCost = d1O2transportationCost;
     }
 
-    public int getD1O3transportationCost() {
+    public double getD1O3transportationCost() {
         return D1O3transportationCost;
     }
 
@@ -126,7 +126,7 @@ public class Aggregator {
         D1O3transportationCost = d1O3transportationCost;
     }
 
-    public int getD2O1transportationCost() {
+    public double getD2O1transportationCost() {
         return D2O1transportationCost;
     }
 
@@ -134,7 +134,7 @@ public class Aggregator {
         D2O1transportationCost = d2O1transportationCost;
     }
 
-    public int getD2O2transportationCost() {
+    public double getD2O2transportationCost() {
         return D2O2transportationCost;
     }
 
@@ -142,7 +142,7 @@ public class Aggregator {
         D2O2transportationCost = d2O2transportationCost;
     }
 
-    public int getD2O3transportationCost() {
+    public double getD2O3transportationCost() {
         return D2O3transportationCost;
     }
 
