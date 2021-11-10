@@ -255,6 +255,7 @@ public class EnterData {
 //                System.out.println(aggregator.getD1buyingPrice()); // prints 2
 //                System.out.println(aggregator.getD2supply()); // prints 3
 //                System.out.println(aggregator.getD2buyingPrice()); // prints 4
+//                System.out.println();
 //
 //                System.out.println(aggregator.getO1demand()); // prints 5
 //                System.out.println(aggregator.getO1sellingPrice()); // prints 6
@@ -262,6 +263,7 @@ public class EnterData {
 //                System.out.println(aggregator.getO2sellingPrice()); // prints 8
 //                System.out.println(aggregator.getO3demand()); // prints 9
 //                System.out.println(aggregator.getO3sellingPrice()); // prints 10
+//                System.out.println();
 //
 //                System.out.println(aggregator.getD1O1transportationCost()); // prints 11
 //                System.out.println(aggregator.getD1O2transportationCost()); // prints 12
@@ -274,6 +276,7 @@ public class EnterData {
 //                new TransportationProblemLogic()
 
                 // show result on the screen
+                new Logic();
                 new DisplayResult();
             }
         });
