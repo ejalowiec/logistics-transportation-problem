@@ -7,9 +7,11 @@ import java.awt.event.ActionListener;
 
 public class EnterData {
 
+    private static final int WIDTH = 1250;
+
     public EnterData() {
         JFrame frame = new JFrame("Transportation problem");
-        frame.setSize(1250, 1000);
+        frame.setSize(WIDTH, 1000);
         frame.setLayout(null);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -17,26 +19,26 @@ public class EnterData {
 
         // top panel
         JPanel topPanel = new JPanel();
-        topPanel.setBounds(0, 0, 1250, 280);
-        topPanel.setBackground(Color.gray);
+        topPanel.setBounds(0, 0, WIDTH, 280);
+//        topPanel.setBackground(Color.gray);
         topPanel.setLayout(null);
 
         // center panel
         JPanel centerPanel = new JPanel();
-        centerPanel.setBounds(0, 280, 1250, 280);
-        centerPanel.setBackground(Color.green);
+        centerPanel.setBounds(0, 280, WIDTH, 280);
+//        centerPanel.setBackground(Color.green);
         centerPanel.setLayout(null);
 
         // bottom panel
         JPanel bottomPanel = new JPanel();
-        bottomPanel.setBounds(0, 560, 1250, 340);
-        bottomPanel.setBackground(Color.magenta);
+        bottomPanel.setBounds(0, 560, WIDTH, 340);
+//        bottomPanel.setBackground(Color.magenta);
         bottomPanel.setLayout(null);
 
         // footage panel
         JPanel footagePanel = new JPanel();
-        footagePanel.setBounds(0, 900, 1250, 250);
-        footagePanel.setBackground(Color.blue);
+        footagePanel.setBounds(0, 900, WIDTH, 50);
+//        footagePanel.setBackground(Color.blue);
         footagePanel.setLayout(null);
 
         // labels in top panel
@@ -219,7 +221,7 @@ public class EnterData {
         // submit button
         JButton submitButton = new JButton("Done");
         submitButton.setBounds(555, 0, 100, 40);
-        submitButton.setBackground(Color.green);
+//        submitButton.setBackground(Color.green);
         footagePanel.add(submitButton);
 
         // button listener
