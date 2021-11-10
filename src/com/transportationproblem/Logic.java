@@ -1,5 +1,7 @@
 package com.transportationproblem;
 
+import java.sql.SQLOutput;
+
 public class Logic {
 
     private static double kosztCalk = 0;
@@ -95,10 +97,14 @@ public class Logic {
             }
         }
         System.out.println("Tabela zysków jednostkowych:");
+        System.out.println("\tO1\t\tO2\t\tO3");
+        this.macierzZyskowJednostkowych += "\tO1\tO2\tO3\n";
         for (int i = 0; i < 2; ++i) {
+            System.out.print("D"+(i+1));
+            this.macierzZyskowJednostkowych+= "D"+(i+1);
             for (int j = 0; j < 3; ++j) {
-                System.out.print(T[i][j].zyskJednostkowy + " ");
-                this.macierzZyskowJednostkowych += T[i][j].zyskJednostkowy + " ";
+                System.out.print("\t"+T[i][j].zyskJednostkowy + "\t");
+                this.macierzZyskowJednostkowych += "\t"+T[i][j].zyskJednostkowy + " ";
             }
             System.out.println();
             this.macierzZyskowJednostkowych += "\n";
@@ -295,10 +301,20 @@ public class Logic {
         }
 
         System.out.println("Tabela optymalnych przewozów:");
+        System.out.println("\tO1\t\tO2\t\tO3\t\tOF");
+        this.macierzOptymalnychPrzewozow += "\tO1\tO2\tO3\tOF\n";
         for (int i = 0; i < 3; ++i) {
+            if (i==2) {
+                System.out.print("DF");
+                this.macierzOptymalnychPrzewozow += "DF";
+            }
+            else {
+                System.out.print("D" + (i + 1));
+                this.macierzOptymalnychPrzewozow += "D"+(i+1);
+            }
             for (int j = 0; j < 4; ++j) {
-                System.out.print(T[i][j].zyskJednostkowy + "(" + T[i][j].ilosc + ") ");
-                macierzOptymalnychPrzewozow += (T[i][j].zyskJednostkowy + "(" + T[i][j].ilosc + ") ");
+                System.out.print("\t"+T[i][j].zyskJednostkowy + "(" + T[i][j].ilosc + ") ");
+                macierzOptymalnychPrzewozow += ("\t"+T[i][j].zyskJednostkowy + "(" + T[i][j].ilosc + ") ");
             }
             System.out.println();
             macierzOptymalnychPrzewozow += "\n";
