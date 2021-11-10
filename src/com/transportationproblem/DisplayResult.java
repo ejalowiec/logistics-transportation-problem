@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class DisplayResult {
 
-    public static final int WIDTH = 600;
+    public static final int WIDTH = 950;
 
     public DisplayResult() {
 

@@ -96,7 +96,7 @@ public class EnterData {
 
         // selling price label
         JLabel sellingPriceLabel = new JLabel( "Cena sprzedaży:");
-        sellingPriceLabel.setBounds(800,30,170,30);
+        sellingPriceLabel.setBounds(800,30,210,30);
         sellingPriceLabel.setFont(new Font("Calibri", Font.PLAIN, 22));
         centerPanel.add(sellingPriceLabel);
 
