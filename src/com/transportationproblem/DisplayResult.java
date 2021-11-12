@@ -24,7 +24,7 @@ public class DisplayResult {
         unitProfitMatrix.setBounds(20,20,WIDTH,30);
 
         JTextArea unitProfitArea = new JTextArea();
-        unitProfitArea.setBounds(20, 50, WIDTH, 150);
+        unitProfitArea.setBounds(20, 60, WIDTH, 150);
 
         JLabel optimalTransport = new JLabel();
         optimalTransport.setBounds(20,280,WIDTH,30);
